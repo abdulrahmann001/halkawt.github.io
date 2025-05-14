@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halkwat Ali Abdul Qadir - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2a9d8f;
+            --secondary: #264653;
+            --light: #e9c46a;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            padding-top: 56px; /* For fixed navbar */
+        }
+
+        /* Header Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('pattern-bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            border: 5px solid var(--primary);
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: var(--secondary) !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--secondary);
+            font-size: 2.5rem;
+        }
+
+        /* Skills Cards */
+        .skill-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Timeline */
+        .timeline-item {
+            padding: 2rem;
+            background: #f8f9fa;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Buttons */
+        .contact-buttons .btn {
+            margin: 0.5rem;
+            min-width: 180px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-buttons .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Social Links */
+        .social-links a {
+            color: var(--secondary);
+            transition: color 0.3s ease;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            section {
+                padding: 2rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Halkwat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="profile-photo">
+                <img src="halo.jpg" alt="Halkwat Ali Abdul Qadir">
+            </div>
+            <h1 class="display-4">Halkwat Ali Abdul Qadir</h1>
+            <p class="lead">Computer Science Graduate & IT Professional</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary me-2"></i> Native Kurdish</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Intermediate English</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Intermediate Arabic</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h3>Education</h3>
+                        <p><i class="fas fa-graduation-cap text-primary me-2"></i> Bachelor's Degree in Computer Science</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h3>Key Skills</h3>
+                        <p><i class="fas fa-star text-primary me-2"></i> Strong Soft Skills</p>
+                        <p><i class="fas fa-star text-primary me-2"></i> Social & Outgoing Personality</p>
+                        <p><i class="fas fa-star text-primary me-2"></i> General IT Knowledge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Experience & Projects</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline-item">
+                        <h3>Air Quality Monitoring System</h3>
+                        <p>Developed research project using hardware and software solutions for Kurdistan region</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Soran University Conference</h3>
+                        <p>Participated in student project conference</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Volunteering</h3>
+                        <p>CDC Center Volunteer</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Business Management</h3>
+                        <p>Managed small businesses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Get In Touch</h2>
+            <div class="contact-buttons d-flex flex-wrap justify-content-center">
+                <a href="tel:+07509707517" class="btn btn-primary btn-lg">
+                    <i class="fas fa-phone me-2"></i> Call Me
+                </a>
+                <a href="mailto:halkawt506@gmail.com" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope me-2"></i> Email
+                </a>
+                <a href="https://wa.me/07509707517" class="btn btn-primary btn-lg">
+                    <i class="fab fa-whatsapp me-2"></i> WhatsApp
+                </a>
+                <a href="viber://add?number=07509707517" class="btn btn-primary btn-lg">
+                    <i class="fab fa-viber me-2"></i> Viber
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2023 Halkwat Ali Abdul Qadir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to timeline items when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.timeline-item, .skill-card').forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+
+</html>
